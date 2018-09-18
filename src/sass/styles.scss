@@ -38,6 +38,9 @@ p {
   margin-top: 20px;
   list-style: none;
   width: 100%;
+  img {
+    width: 25px;
+  }
 }
 
 .activeLink {
@@ -71,6 +74,18 @@ p {
     padding-bottom: 10px;
   }
   z-index: 1;
+}
+
+.companyContainer {
+  display: grid;
+  img {
+    max-width: 300px;
+    @include centerDisplay();
+  }
+  .blogpiece {
+    @include centerDisplay();
+  }
+  grid-template: repeat(2, 2fr 1fr) / 100%;
 }
 
 .poweredFooter {
