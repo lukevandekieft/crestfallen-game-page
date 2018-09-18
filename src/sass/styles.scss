@@ -1,7 +1,15 @@
 $font-stack: Helvetica, sans-serif;
-$primary-font-color: red;
+$primary-font-color: white;
 
 body {
   font: 100% $font-stack;
   color: $primary-font-color;
+  background-image: url(../assets/img/background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+ul {
+  list-style: none;
 }
