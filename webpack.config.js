@@ -57,6 +57,14 @@ module.exports = {
       template: './src/blog.html',
       filename: 'blog.html'
     }),
+    new HtmlWebpackPlugin({
+      template: './src/press.html',
+      filename: 'press.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/company.html',
+      filename: 'company.html'
+    }),
     new UglifyJsPlugin(),
   ]
 

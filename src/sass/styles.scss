@@ -1,6 +1,12 @@
 $font-stack: Helvetica, sans-serif;
 $primary-font-color: white;
 
+@mixin centerDisplay() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 * {
   margin: 0 0;
   // border: dashed white;
@@ -14,15 +20,16 @@ body {
   background-size: cover;
   background-position: center;
   width: 80%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 40px;
+  @include centerDisplay();
 }
 
 .mainContainer {
-  // display: block;
-  margin-left: auto;
-  margin-right: auto;
+  @include centerDisplay();
+}
+
+p {
+  font-size: 16px;
 }
 
 .navigation {
@@ -39,29 +46,41 @@ body {
 
 .logoCountdownContainer {
   width: 60%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  @include centerDisplay();
   margin-top: 50%;
   img {
     width: 100%;
     max-width: 300px;
     padding-bottom: 10%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include centerDisplay();
   }
 }
 
-.poweredender {
-  position: absolute;
+.blogPost {
+  @include centerDisplay();
+  margin-top: 30px;
+  padding: 20px;
+  width: 90%;
+  position: relative;
+  background-color:rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  img {
+    width: 100%;
+  }
+  .blogpiece {
+    padding-bottom: 10px;
+  }
+  z-index: 1;
+}
+
+.poweredFooter {
+  position: fixed;
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   img {
     width: 60px;
   }
+  z-index: 0;
 }
