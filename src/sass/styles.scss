@@ -59,6 +59,11 @@ p {
     text-decoration: none;
     color: $primary-font-color;
   }
+  h5 {
+    @media screen and (min-width: 835px) {
+      font-size: 1.5em;
+    }
+  }
   img {
     width: 45px;
   }
@@ -92,13 +97,16 @@ p {
   background-color:rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   overflow: hidden;
-  // img {
-  //   max-width: 600px;
-  //   align-self: flex-start;
-  //   margin-right: 18px;
-  // }
   .blogpiece {
     padding-bottom: 10px;
+  }
+  @media screen and (min-width: 835px) {
+    h3 {
+      font-size: 1.8em;
+    }
+    h5 {
+      font-size: 1.2em;
+    }
   }
 }
 
@@ -113,18 +121,17 @@ p {
     align-items: center;
     justify-content: center;
     height: auto;
+    margin-right: 17px;
     img {
       width: 100%;
       max-width: 600px;
-
       align-self: flex-start;
-      margin-right: 18px;
+      margin-bottom: 18px;
       @media screen and (min-width: 600px) {
         min-width: 500px;
+        margin-bottom: 0;
+        margin-right: 18px;
       }
-    }
-    @media screen and (min-width: 600px) {
-    height: 300px;
     }
   }
   @media screen and (min-width: 600px) {
@@ -145,11 +152,40 @@ p {
   img {
     max-width: 300px;
     @include centerDisplay();
+    @media screen and (min-width: 600px) {
+      max-width: 100%;
+    }
   }
+  background-color: none;
   .blogpiece {
     @include centerDisplay();
   }
-  grid-template: repeat(2, 2fr 1fr) / 100%;
+  grid-template: repeat(2, 300px auto) / 100%;
+  grid-gap: 5px;
+
+  @media screen and (min-width: 700px) {
+    grid-template: repeat(2, auto) / 40% 60%;
+    grid-gap: 25px;
+    // align-items: center;
+  }
+  @media screen and (min-width: 900px) {
+    grid-template: repeat(2, auto) / 30% 70%;
+    // align-items: center;
+  }
+}
+
+.bio {
+  max-width: 300px;
+  margin-bottom: 30px;
+  h3, h5 {
+    margin-bottom: 10px;
+  }
+  .indivBio {
+    margin-right: 20px;
+  }
+  @media screen and (min-width: 600px) {
+    max-width: 100%;
+  }
 }
 
 .poweredFooter {
