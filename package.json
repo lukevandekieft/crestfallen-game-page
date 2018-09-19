@@ -1,7 +1,6 @@
 {
   "name": "indie-game",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -23,5 +22,14 @@
     "webpack": "^4.0.1",
     "webpack-cli": "^2.0.9",
     "webpack-dev-server": "^3.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukevandekieft/indie-game-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lukevandekieft/indie-game-site/issues"
+  },
+  "homepage": "https://github.com/lukevandekieft/indie-game-site#readme",
+  "description": ""
 }

@@ -25,20 +25,28 @@ body {
   @include centerDisplay();
 }
 
-.mainContainer {
-  @include centerDisplay();
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  // max-height: 1040px;
-  // border: dashed white;
-  box-sizing: border-box;
+img {
+  flex-shrink: 0;
 }
 
 p {
   font-size: 16px;
 }
+
+.mainContainer {
+  @include centerDisplay();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 1240px;
+}
+
+#index-main {
+    height: 100%;
+}
+
+
 
 .navigation {
   display: flex;
@@ -61,7 +69,6 @@ p {
 }
 
 .logoCountdownContainer {
-    // border: dashed white;
   width: 60%;
   height: 60%;
   @include centerDisplay();
@@ -82,20 +89,55 @@ p {
   margin-top: 30px;
   padding: 20px;
   width: 90%;
-  position: relative;
   background-color:rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  img {
-    width: 100%;
-    max-width: 600px;
-    @media screen and (min-width: 600px) {
-      display: inline;
-    }
-  }
+  overflow: hidden;
+  // img {
+  //   max-width: 600px;
+  //   align-self: flex-start;
+  //   margin-right: 18px;
+  // }
   .blogpiece {
     padding-bottom: 10px;
   }
-  z-index: 1;
+}
+
+.blogInfo {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: space-between;
+  .image-box {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    img {
+      width: 100%;
+      max-width: 600px;
+
+      align-self: flex-start;
+      margin-right: 18px;
+      @media screen and (min-width: 600px) {
+        min-width: 500px;
+      }
+    }
+    @media screen and (min-width: 600px) {
+    height: 300px;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
+  }
+}
+
+.blog-content {
+  width: 100%;
+  @media screen and (min-width: 600px) {
+    width: 50%;
+    max-width: 600px;
+  }
 }
 
 .companyContainer {
