@@ -10,7 +10,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "html-srcsets-loader": "^0.5.1"
+  },
   "devDependencies": {
     "css-loader": "^1.0.0",
     "file-loader": "^2.0.0",

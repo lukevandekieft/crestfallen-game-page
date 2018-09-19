@@ -189,9 +189,14 @@ p {
 }
 
 .poweredFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  margin-top: 20px;
   img {
     width: 60px;
+    margin-left: 10px;
   }
   z-index: 0;
 }
