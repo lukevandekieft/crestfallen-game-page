@@ -1,5 +1,7 @@
 $font-stack: Helvetica, sans-serif;
 $primary-font-color: white;
+$header-font: 'Roboto Slab', serif;
+$body-font: 'Arimo', sans-serif;
 
 @mixin centerDisplay() {
   display: block;
@@ -9,7 +11,14 @@ $primary-font-color: white;
 
 * {
   margin: 0 0;
+  font-family: $body-font;
+  letter-spacing: .5px;
   // border: dashed white;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  font-family: $header-font;
+  letter-spacing: 1.5px;
 }
 
 // https://stackoverflow.com/questions/51801338/webpack-html-loader-not-resolving-srcset-images
@@ -143,7 +152,6 @@ p {
       @media screen and (min-width: 750px) {
         min-width: 500px;
         margin-bottom: 0;
-        margin-right: 18px;
       }
     }
   }
@@ -157,6 +165,7 @@ p {
   @media screen and (min-width: 750px) {
     width: 50%;
     max-width: 600px;
+    margin: 0px 18px;
   }
 }
 
