@@ -13,15 +13,12 @@ $body-font: 'Arimo', sans-serif;
   margin: 0 0;
   font-family: $body-font;
   letter-spacing: .5px;
-  // border: dashed white;
 }
 
 h1, h2, h3, h4, h5, h6, a {
   font-family: $header-font;
   letter-spacing: 1.5px;
 }
-
-// https://stackoverflow.com/questions/51801338/webpack-html-loader-not-resolving-srcset-images
 
 body {
   font: 100% $font-stack;
@@ -63,7 +60,7 @@ p {
 }
 
 #index-main {
-    height: 100%;
+  height: 100%;
 }
 
 .navigation {
@@ -190,14 +187,12 @@ p {
   @media screen and (min-width: 600px) {
     grid-template: repeat(5, auto) / 40% 60%;
     grid-gap: 25px;
-    // align-items: center;
   }
   @media screen and (min-width: 900px) {
     img {
       border-radius: 0%;
     }
     grid-template: repeat(5, auto) / 30% 70%;
-    // align-items: center;
   }
 }
 
@@ -221,6 +216,7 @@ p {
   align-items: center;
   text-align: center;
   margin-top: 20px;
+  padding-bottom: 20px;
   img {
     width: 60px;
     margin-left: 10px;
