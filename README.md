@@ -10,7 +10,7 @@ _Welcome to Crestfallen, a survivalist game that pits an injured hiker against t
 <br>
 <br>
 <kbd>
-  <img src="https://github.com/lukevandekieft/crestfallen-game-page/blob/master/img/live-site.gif">
+  <img src="https://github.com/lukevandekieft/crestfallen-game-page/blob/master/src/assets/img/live-site.gif">
 </kbd>
 
 
@@ -18,7 +18,7 @@ _Welcome to Crestfallen, a survivalist game that pits an injured hiker against t
 
 ## Setup/Installation Requirements
 
-_Live site is at https://lukevandekieft.github.io/crestfallen-game-page_
+_Live site is at https://crestfallen-game-site.firebaseapp.com/_
 <br>
 <br>
 
