@@ -18,7 +18,7 @@ _Welcome to Crestfallen, a survivalist game that pits an injured hiker against t
 
 ## Setup/Installation Requirements
 
-_Live site is at https://crestfallen-game-site.firebaseapp.com/_
+_Live site is at https://crestfallen-game.firebaseapp.com/_
 <br>
 <br>
 
